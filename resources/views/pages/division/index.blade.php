@@ -43,7 +43,7 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->nama_divisi }}</td>
-                                <td>{{ $item->tunjangan }}</td>
+                                <td>Rp. {{ number_format($item->tunjangan, 0, ',', '.') }}</td>
                                 <td>
                                     <div class="d-flex align-items-center" style="gap: 10px">
                                         <a href="/division/{{ $item->id }}" class="d-inline-block btn btn-sm btn-warning">

@@ -43,7 +43,7 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->nama_jabatan }}</td>
-                                <td>{{ $item->gaji_pokok }}</td>
+                                <td>Rp. {{ number_format($item->gaji_pokok, 0, ',', '.') }}</td>
                                 <td>
                                     <div class="d-flex align-items-center" style="gap: 10px">
                                         <a href="/position/{{ $item->id }}" class="d-inline-block btn btn-sm btn-warning">
