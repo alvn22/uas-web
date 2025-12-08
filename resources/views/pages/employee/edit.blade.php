@@ -48,7 +48,7 @@
                         Kembali
                     </a>
                     <button type="submit" class="btn btn-primary">
-                        Tambah
+                        Edit
                     </button>
                 </div>
             </div>
