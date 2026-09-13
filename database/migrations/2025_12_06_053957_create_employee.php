@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('employee', function (Blueprint $table) {
             $table->id();
             $table->string('nama', 100);
-            $table->integer('nik');
+            $table->string('nik', 13);
             $table->unsignedBigInteger('id_jabatan');
             $table->unsignedBigInteger('id_divisi');
             $table->timestamps();
 
-            $table->foreign('id_jabatan')->references('id')->on('position');
-            $table->foreign('id_divisi')->references('id')->on('division');
+            $table->foreign('id_jabatan')->references('id')->on('positions');
+            $table->foreign('id_divisi')->references('id')->on('divisions');
         });
     }
 

@@ -12,7 +12,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('payroll', function (Blueprint $table) {
+        Schema::create('payrolls', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_karyawan');
             $table->timestamp('tanggal')->default(DB::raw('CURRENT_TIMESTAMP'));
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('payroll');
+        Schema::dropIfExists('payrolls');
     }
 };
